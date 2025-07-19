@@ -62,8 +62,6 @@ const perguntarAI = async (question, game, apiKey) => {
         })
     })
 
-    //AIzaSyD11vBwdfWMz7RO_AGQYmN0k_R34LaGuU8
-
     const data = await response.json()
     return data.candidates[0].content.parts[0].text
 }
